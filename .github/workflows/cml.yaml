@@ -5,13 +5,18 @@ on: [push]
 jobs:
   run:
     runs-on: [ubuntu-latest]
-    container: docker://dvcorg/cml-py3:latest
+    #container: docker://dvcorg/cml-py3:latest
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
       - uses: actions/checkout@v2
       - name: cml_run
         env:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          npm i -g @dvcorg/cml
+
           echo "hello world!"  > report.md
           cml-send-comment report.md
 
