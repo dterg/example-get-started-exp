@@ -1,0 +1,103 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "accuracy": "0.9368666410446167",
+        "epoch": "0",
+        "index": 0,
+        "loss": "0.21188731491565704",
+        "rev": "workspace",
+        "val_accuracy": "0.9666000008583069",
+        "val_loss": "0.11359499394893646"
+    },
+    {
+        "accuracy": "0.9727833271026611",
+        "epoch": "1",
+        "index": 1,
+        "loss": "0.08879226446151733",
+        "rev": "workspace",
+        "val_accuracy": "0.9728000164031982",
+        "val_loss": "0.08458207547664642"
+    },
+    {
+        "accuracy": "0.9803666472434998",
+        "epoch": "2",
+        "index": 2,
+        "loss": "0.06139680743217468",
+        "rev": "workspace",
+        "val_accuracy": "0.9797999858856201",
+        "val_loss": "0.06497657299041748"
+    },
+    {
+        "accuracy": "0.9855166673660278",
+        "epoch": "3",
+        "index": 3,
+        "loss": "0.04546738415956497",
+        "rev": "workspace",
+        "val_accuracy": "0.9764000177383423",
+        "val_loss": "0.07881737500429153"
+    },
+    {
+        "accuracy": "0.9879166483879089",
+        "epoch": "4",
+        "index": 4,
+        "loss": "0.03729495033621788",
+        "rev": "workspace",
+        "val_accuracy": "0.9800999760627747",
+        "val_loss": "0.06657326966524124"
+    },
+    {
+        "accuracy": "0.9904166460037231",
+        "epoch": "5",
+        "index": 5,
+        "loss": "0.02915477566421032",
+        "rev": "workspace",
+        "val_accuracy": "0.9814000129699707",
+        "val_loss": "0.0605228953063488"
+    },
+    {
+        "accuracy": "0.9915500283241272",
+        "epoch": "6",
+        "index": 6,
+        "loss": "0.024526340886950493",
+        "rev": "workspace",
+        "val_accuracy": "0.9789999723434448",
+        "val_loss": "0.07310014218091965"
+    },
+    {
+        "accuracy": "0.9931833148002625",
+        "epoch": "7",
+        "index": 7,
+        "loss": "0.02042750082910061",
+        "rev": "workspace",
+        "val_accuracy": "0.978600025177002",
+        "val_loss": "0.07734756916761398"
+    }
+]
+    },
+    "title": "",
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "index",
+            "type": "quantitative",
+            "title": "index"
+        },
+        "y": {
+            "field": "val_loss",
+            "type": "quantitative",
+            "title": "val_loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+

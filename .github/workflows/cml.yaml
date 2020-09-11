@@ -18,5 +18,9 @@ jobs:
           npm i -g @dvcorg/cml
 
           echo "hello world!"  > report.md
+
+          vl2png logs.vega.json > img.png
+          cml-publish --md img.png >> report.md
+
           cml-send-comment report.md
 
