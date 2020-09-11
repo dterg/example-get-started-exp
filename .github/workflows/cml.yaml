@@ -27,4 +27,3 @@ jobs:
           cml-publish --md img.png >> report.md
 
           cml-send-comment report.md
-
