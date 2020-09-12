@@ -17,9 +17,9 @@ jobs:
         run: |
           npm i -g @dvcorg/cml
 
-          sudo apt-get install -y libcairo2-dev libpango1.0-dev libjpeg-dev
-          sudo apt-get install -y libgif-dev librsvg2-dev libfontconfig-dev
-          npm install -g vega-cli vega-lite
+          #sudo apt-get install -y libcairo2-dev libpango1.0-dev libjpeg-dev
+          #sudo apt-get install -y libgif-dev librsvg2-dev libfontconfig-dev
+          #npm install -g vega-cli vega-lite
 
           echo "hello world!"  > report.md
 
