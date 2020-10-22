@@ -37,9 +37,9 @@ stages:
     - src/evaluate.py
     metrics:
     - scores.json:
-        cache: false
+        cache: true
     plots:
     - prc.json:
-        cache: false
+        cache: true
         x: recall
         y: precision
