@@ -9,8 +9,16 @@ stages:
     - prepare.split
     outs:
     - data/prepared
+  augment:
+    cmd: python src/augment.py data/prepared
+    deps:
+      - data/prepared
+    params:
+      - augment.type
+    outs:
+      - data/augmented
   featurize:
-    cmd: python src/featurization.py data/prepared data/features
+    cmd: python src/featurization.py data/augmented data/features
     deps:
     - data/prepared
     - src/featurization.py

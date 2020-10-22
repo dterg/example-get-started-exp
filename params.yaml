@@ -2,6 +2,9 @@ prepare:
   split: 0.20
   seed: 20170428
 
+augment:
+  type: contextual_word_embedding
+
 featurize:
   max_features: 1500
   ngrams: 2
