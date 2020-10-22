@@ -11,7 +11,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install -r requirements.txt
-          dvc pull --with-deps prepare -v
+          dvc pull --with-deps prepare
           dvc repro -f
 
           echo "## Metrics" >> report.md
